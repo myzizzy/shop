@@ -1,6 +1,6 @@
 let data =  [
     {
-      id : 0,
+      id : 3,
       imgPath : "/img/shoes1.jpg",
       title : "White and Black",
       content : "Born in France",
@@ -16,7 +16,23 @@ let data =  [
     },
   
     {
-      id : 2,
+      id : 20,
+      imgPath : "/img/shoes3.jpg",
+      title : "Grey Yordan",
+      content : "Born in the States",
+      price : 130000
+    },
+  
+    {
+      id : 4,
+      imgPath : "/img/shoes3.jpg",
+      title : "Grey Yordan",
+      content : "Born in the States",
+      price : 130000
+    },
+  
+    {
+      id : 5,
       imgPath : "/img/shoes3.jpg",
       title : "Grey Yordan",
       content : "Born in the States",

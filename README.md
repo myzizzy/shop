@@ -29,6 +29,12 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run depoly`
+
+Builds the app for production to the `build` folder and publishing.\
+Open [https://myzizzy.github.io/shop](https://myzizzy.github.io/shop) to view it in your browser.
+
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
