@@ -1,6 +1,6 @@
 let data =  [
     {
-      id : 3,
+      id : 0,
       imgPath : "/img/shoes1.jpg",
       title : "White and Black",
       content : "Born in France",
