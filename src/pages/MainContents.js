@@ -10,7 +10,7 @@ export default function MainContents() {
 
   useEffect(() => {
     console.log("렌더링 될때마다 실행");
-  }, []);
+  });
 
   return (
     <div className="container">

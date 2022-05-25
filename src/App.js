@@ -8,6 +8,7 @@ import StudyList from './pages/StudyList';
 import defaultData from './data' ;
 import { useState } from 'react';
 import StudyDetail from './pages/StudyDetail';
+import NaverList from './pages/NaverList';
 
 function App() {
   let navigate = useNavigate() ;
@@ -22,6 +23,7 @@ function App() {
           <Nav.Link onClick={ ()=>{ navigate( '/shop'   )}}>HOME</Nav.Link>
           <Nav.Link onClick={ ()=>{ navigate( '/shop/0' )}}>detail</Nav.Link>
           <Nav.Link onClick={ ()=>{ navigate( '/study'  )}}>StudyView</Nav.Link>
+          <Nav.Link onClick={ ()=>{ navigate( '/NaverAPI'  )}}>NaverAPI</Nav.Link>
         </Nav>
         </Container>
       </Navbar>
@@ -32,6 +34,7 @@ function App() {
         </Route>
         <Route exact path='/study'      element= { <StudyList docData={ data } /> } />
         <Route exact path='/study/:id'  element= { <StudyDetail docData={ data } /> } />
+        <Route exact path='/NaverAPI'   element= { <NaverList /> } />
         <Route exact path='/*'      element= { <div>없는 페이지</div> } /> 
       </Routes>      
     </div>
@@ -43,7 +46,7 @@ export default App;
 function About() {
   return(
     <div>
-      <h4>회사정보임</h4>
+      <h4>회사정ss보임</h4>
       <Outlet></Outlet>
     </div>
   )
