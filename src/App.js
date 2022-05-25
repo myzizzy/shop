@@ -24,6 +24,7 @@ function App() {
           <Nav.Link onClick={ ()=>{ navigate( '/shop/0' )}}>detail</Nav.Link>
           <Nav.Link onClick={ ()=>{ navigate( '/study'  )}}>StudyView</Nav.Link>
           <Nav.Link onClick={ ()=>{ navigate( '/NaverAPI'  )}}>NaverAPI</Nav.Link>
+          <Nav.Link onClick={ ()=>{ navigate( '/outletTest'  )}}>outletTest</Nav.Link>
         </Nav>
         </Container>
       </Navbar>
@@ -35,6 +36,9 @@ function App() {
         <Route exact path='/study'      element= { <StudyList docData={ data } /> } />
         <Route exact path='/study/:id'  element= { <StudyDetail docData={ data } /> } />
         <Route exact path='/NaverAPI'   element= { <NaverList /> } />
+        <Route exact path='/outletTest' element= { <StudyList docData={ data } /> } >
+         <Route exact path=':id'  element= { <StudyDetail docData={ data } /> } />
+        </Route>
         <Route exact path='/*'      element= { <div>없는 페이지</div> } /> 
       </Routes>      
     </div>

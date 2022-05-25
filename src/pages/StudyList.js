@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 
 function StudyList( props ) {
   let goDetail = useNavigate() ;
@@ -24,6 +24,7 @@ function StudyList( props ) {
           })
       }
       </div>
+      <Outlet></Outlet>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { Outlet, useParams } from 'react-router-dom';
 
 function StudyDetail( props ) {
     let {id} = useParams();
@@ -25,6 +25,7 @@ function StudyDetail( props ) {
                     <button className="btn btn-danger">주문하기</button> 
                 </div>
             </div>
+            <Outlet></Outlet>
         </div>  
     )
 }
