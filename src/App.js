@@ -13,6 +13,8 @@ import NaverList from './pages/NaverList';
 function App() {
   let navigate = useNavigate() ;
   let [data] = useState(defaultData);
+
+  console.log(`NODE_ENV = ${process.env.NODE_ENV}`);
   
   return (
     <div className="App">
